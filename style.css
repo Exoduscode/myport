@@ -1,0 +1,414 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+  background-image: url(Images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: black; /* Default text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: aqua;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: aqua;
+}
+
+nav ul li a:hover {
+  background-color: tomato;
+}
+/* Styling for section.hm */
+.hm {
+  color: white;
+}
+
+.hm .content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hm h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hm h4 {
+  font-size: 20px;
+}
+
+.hm p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hm ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+.hm ul li:before {
+  content: "\2713";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.hm a {
+  text-decoration: none;
+  color: red;
+}
+
+.hm a:hover {
+  text-decoration: underline;
+}
+
+/* -------#abm-------------- */
+#abm {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  color: blueviolet;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+/*---------------Welcome Style----------*/
+.welcome {
+  overflow: hidden; 
+  white-space: nowrap;
+  color: white;
+}
+
+.welcome h1 {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Styles for image and circle container */
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.circle-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container h1 {
+  color: aqua;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Styling for the quotation */
+.quotation {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+}
+
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+blockquote footer {
+  font-size: 1em;
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+/*----------pagination-----------*/
+
+.pagination {
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between them */
+  max-width: 600px;
+  margin: 20px auto 0; /* Added margin-top for spacing */
+}
+
+.pagination button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+/* Styling for the contact me section */
+.contact-me {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact-me h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for Sevices */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.service {
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Styling for the footer */
+.footer {
+  background-color: #333;
+  color: aqua;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Social media icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 80px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  border-radius: 80px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 80px;
+}
+
+.fa-github {
+  background-color: black;
+  color: white;
+  border-radius: 80px;
+}
+
+.fa-telegram {
+  background-color: #3B5998;
+  color: white;
+  border-radius: 80px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
+    width: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .circle-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle-container h1 {
+    font-size: 20px;
+  }
+
+  .hm {
+    margin: 40px;
+    padding: 30px;
+  }
+
+  .hm h1 {
+    font-size: 28px;
+  }
+
+  .hm h2 {
+    font-size: 24px;
+  }
+
+  .hm p {
+    font-size: 16px;
+  }
+
+  .footer .social-icons {
+    font-size: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%; 
+    max-width: 300px; 
+    margin-bottom: 20px; 
+  }
+}
